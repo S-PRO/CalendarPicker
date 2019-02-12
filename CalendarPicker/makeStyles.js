@@ -4,6 +4,11 @@
  * Copyright 2016 Yahoo Inc.
  * Licensed under the terms of the MIT license. See LICENSE file in the project root for terms.
  */
+
+import {
+  Dimensions,
+} from 'react-native';
+
 const DEFAULT_SELECTED_BACKGROUND_COLOR = '#5ce600';
 const DEFAULT_SELECTED_TEXT_COLOR = '#000000';
 const DEFAULT_TODAY_BACKGROUD_COLOR = '#CCCCCC';
@@ -41,7 +46,7 @@ export function makeStyles(scaler, backgroundColor, textColor, todayBackgroundCo
     },
 
     dayLabelsWrapper: {
-      width: '100%',
+      width: Dimensions.get('window').width,
       flexDirection: 'row',
       borderBottomWidth: 1,
       borderBottomColor: 'rgba(255,255,255,0.25)',
