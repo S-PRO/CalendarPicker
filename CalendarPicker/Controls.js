@@ -11,8 +11,10 @@ export default function Controls({ styles, textStyles, label, onPressControl, co
       onPress={() => onPressControl()}
       style={{flex: 1, height: 20, paddingTop: 5}}
       hitSlop={{
-        top: 30,
-        bottom: 10
+        top: 20,
+        bottom: 10,
+        left: 20,
+        right: 20
       }}
     >
       {component
